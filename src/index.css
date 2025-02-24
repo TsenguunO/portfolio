@@ -1,5 +1,42 @@
 @import "tailwindcss";
 
+/* Define Global Color Variables */
+:root {
+  --color-primary: #85C1E9;   /* Start color */
+  --color-secondary: #3d5a81; /* End color */
+  --color-accent: #658FAE;    /* Intermediate color */
+  --color-tertiary: #445E73;  /* Another intermediate color */
+  /* --color-description: #F5F5F5; */
+  --color-description: #FFFFFF;
+}
+
+.box_transition {
+  /* Padding equivalent to p-6 */
+  padding: 1.5rem;
+  
+  /* Rounded corners equivalent to rounded-xl */
+  border-radius: 0.75rem;
+
+  /* Border styling: 1px solid with white at 10% opacity (border-white/10) */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  /* background-color: rgba(var(--gray-100), 0.3); */
+  background-color: rgba(37, 37, 37, 0.05);
+  /* Transition equivalent to transition */
+  transition: all 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.box_transition:hover {
+  /* Move up on hover, equivalent to hover:-translate-y-1 (approx. -0.25rem) */
+  transform: translateY(-0.25rem);
+  /* Change border color on hover (border-blue-500/30) */
+  /* border-color: rgba(59, 130, 246, 0.3); */
+  /* border: 1px solid #ffffff; */
+  backdrop-filter: blur(40px);
+  /* Add a shadow on hover (hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)]) */
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.2);
+}
+
 html,
 body {
   margin: 0;
