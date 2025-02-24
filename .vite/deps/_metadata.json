@@ -1,0 +1,46 @@
+{
+  "hash": "5fdb5683",
+  "configHash": "fd81516c",
+  "lockfileHash": "fb763811",
+  "browserHash": "3f58a207",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "0084e0bc",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "61004921",
+      "needsInterop": true
+    },
+    "react-pdf": {
+      "src": "../../node_modules/react-pdf/dist/esm/index.js",
+      "file": "react-pdf.js",
+      "fileHash": "bc27bbd6",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-RVMO727X": {
+      "file": "chunk-RVMO727X.js"
+    },
+    "fs-OZYARV2F": {
+      "file": "fs-OZYARV2F.js"
+    },
+    "http-JOV4RC4V": {
+      "file": "http-JOV4RC4V.js"
+    },
+    "https-XRUYGCQX": {
+      "file": "https-XRUYGCQX.js"
+    },
+    "url-YR7V36UO": {
+      "file": "url-YR7V36UO.js"
+    },
+    "chunk-WOOG5QLI": {
+      "file": "chunk-WOOG5QLI.js"
+    }
+  }
+}
