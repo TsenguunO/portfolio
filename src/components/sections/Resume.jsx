@@ -57,13 +57,13 @@ export const Resume = () => {
             </a>
           </div>
 
-          <Row className="resume">
+          {/* <Row className="resume">
             <Document
               file={"/resume_page.pdf"}
               className="d-flex justify-content-center">
               <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
             </Document>
-          </Row>
+          </Row> */}
 
           {/* ✅ Download Resume Button */}
           {/* <div className="flex justify-center mb-6">
