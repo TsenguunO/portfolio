@@ -72,7 +72,7 @@ export const About = () => {
             {/* Left column: Education */}
             <div className="col-span-1 text-center relative">
               <div className="absolute inset-0 bg-gray-500/20 backdrop-blur-md rounded"></div>
-              <h1 className="text-2xl font-bold whitespace-nowrap text-gray-400 relative z-10 px-2 py-1">
+              <h1 className="text-2xl font-bold whitespace-nowrap text-white relative z-10 px-2 py-1">
                 Education
               </h1>
             </div>
@@ -81,7 +81,7 @@ export const About = () => {
             {/* Right column: Experience */}
             <div className="col-span-1 text-center relative">
               <div className="absolute inset-0 bg-gray-500/20 backdrop-blur-md rounded"></div>
-              <h1 className="text-2xl font-bold whitespace-nowrap text-gray-400 relative z-10 px-2 py-1">
+              <h1 className="text-2xl font-bold whitespace-nowrap text-white relative z-10 px-2 py-1">
                 Experience
               </h1>
             </div>
@@ -97,7 +97,7 @@ export const About = () => {
                 <div className="col-span-1"></div>
                 {/* Center column: Dot */}
                 <div className="col-span-1 relative">
-                  <span className="absolute left-1/2 top-0 -translate-x-1/2 block w-3 h-3 bg-[var(--color-primary)] rounded-full border border-white-700 group-hover:border-blue-400 transition-colors duration-200"></span>
+                  <span className="absolute left-1/2 top-0 -translate-x-1/2 block w-3 h-3 bg-[var(--color-primary)] rounded-full border border-white group-hover:border-gray-600 transition-colors duration-200"></span>
                 </div>
                 {/* Right column: Content */}
                 <div className="col-span-1 pr-8 text-center">
@@ -121,7 +121,7 @@ export const About = () => {
                 </div>
                 {/* Center column: Dot */}
                 <div className="col-span-1 relative">
-                  <span className="absolute left-1/2 top-0 transform -translate-x-1/2 block w-3 h-3 bg-[var(--color-secondary)] rounded-full border-1 border-white-700 group-hover:border-blue-400 transition-colors duration-200"></span>
+                  <span className="absolute left-1/2 top-0 transform -translate-x-1/2 block w-3 h-3 bg-[var(--color-secondary)] rounded-full border-1 border-white group-hover:border-gray-600 transition-colors duration-200"></span>
                 </div>
                 {/* Right column: empty */}
                 <div className="col-span-1"></div>
@@ -133,7 +133,7 @@ export const About = () => {
                 <div className="col-span-1"></div>
                 {/* Center column: Dot */}
                 <div className="col-span-1 relative">
-                  <span className="absolute left-1/2 top-0 -translate-x-1/2 block w-3 h-3 bg-[var(--color-primary)] rounded-full border border-white-700 group-hover:border-blue-400 transition-colors duration-200"></span>
+                  <span className="absolute left-1/2 top-0 -translate-x-1/2 block w-3 h-3 bg-[var(--color-primary)] rounded-full border border-white-700 group-hover:border-gray-600 transition-colors duration-200"></span>
                 </div>
                 {/* Right column: Content */}
                 <div className="col-span-1 pr-8 text-center">
@@ -152,7 +152,7 @@ export const About = () => {
                 <div className="col-span-1"></div>
                 {/* Center column: Dot */}
                 <div className="col-span-1 relative">
-                  <span className="absolute left-1/2 top-0 -translate-x-1/2 block w-3 h-3 bg-[var(--color-primary)] rounded-full border border-white-700 group-hover:border-blue-400 transition-colors duration-200"></span>
+                  <span className="absolute left-1/2 top-0 -translate-x-1/2 block w-3 h-3 bg-[var(--color-primary)] rounded-full border border-white-700 group-hover:border-gray-600 transition-colors duration-200"></span>
                 </div>
                 {/* Right column: Content */}
                 <div className="col-span-1 pr-8 text-center">
@@ -176,7 +176,7 @@ export const About = () => {
                 </div>
                 {/* Center column: Dot */}
                 <div className="col-span-1 relative">
-                  <span className="absolute left-1/2 top-0 transform -translate-x-1/2 block w-3 h-3 bg-[var(--color-secondary)] rounded-full border-1 border-white-700 group-hover:border-blue-400 transition-colors duration-200"></span>
+                  <span className="absolute left-1/2 top-0 transform -translate-x-1/2 block w-3 h-3 bg-[var(--color-secondary)] rounded-full border-1 border-white-700 group-hover:border-gray-600 transition-colors duration-200"></span>
                 </div>
                 {/* Right column: empty */}
                 <div className="col-span-1"></div>
