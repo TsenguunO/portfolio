@@ -30,7 +30,7 @@ export const LoadingScreen = ({ onComplete }) => {
         boxColor={"#3d5a81"}
         shadowColor={"#85C1E9"}
         style={{ marginBottom: "10px" }}
-        desktopSize={"128px"}
+        desktopSize={"80x"}
         mobileSize={"80px"}
       />
 

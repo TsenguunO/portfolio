@@ -14,8 +14,7 @@ export const About = () => {
   return (
     <section
       id="about"
-      className="min-h-screen flex items-center justify-center py-20"
-    >
+      className="min-h-screen flex items-center justify-center py-20">
       <RevealOnScroll>
         <div className="max-w-3xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-secondary)] bg-clip-text text-transparent text-center">
@@ -42,8 +41,7 @@ export const About = () => {
                       transition
                       hover:bg-gray-100/60 hover:-translate-y-0.5
                       hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)]
-                    "
-                    >
+                    ">
                       {tech}
                     </span>
                   ))}
@@ -62,8 +60,7 @@ export const About = () => {
                       transition
                       hover:bg-gray-100/60 hover:-translate-y-0.5
                       hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)]
-                    "
-                    >
+                    ">
                       {tech}
                     </span>
                   ))}
@@ -71,45 +68,118 @@ export const About = () => {
               </div>
             </div>
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-            <div className="box_transition">
-              <h3 className="text-xl font-bold mb-4"> 🏫 Education </h3>
-              <ul className="list-disc list-inside text-gray-300 space-y-2">
-                <li>
-                  <strong> B.S. in Computer Science </strong> - XYZ University
-                  (2016-2020)
-                </li>
-                <li>
-                  Relevant Coursework: Data Structures, Web Development, Cloud
-                  Computing...
-                </li>
-              </ul>
+          <div className="grid grid-cols-3 items-center mb-8 mt-8">
+            {/* Left column: Education */}
+            <div className="col-span-1 text-center relative">
+              <div className="absolute inset-0 bg-gray-500/20 backdrop-blur-md rounded"></div>
+              <h1 className="text-2xl font-bold whitespace-nowrap text-gray-400 relative z-10 px-2 py-1">
+                Education
+              </h1>
             </div>
-            <div className="box_transition">
-              <h3 className="text-xl font-bold mb-4"> 💼 Work Experience </h3>
-              <div className="space-y-4 text-gray-300">
-                <div>
-                  <h4 className="font-semibold">
-                    {" "}
-                    Software Engineer at ABC Corp (2020 - Present){" "}
-                  </h4>
-                  <p>
-                    Developed and maintained microservices for cloud-based
-                    applications.
-                  </p>
-                </div>
+            {/* Center column: Empty (for vertical line alignment) */}
+            <div className="col-span-1"></div>
+            {/* Right column: Experience */}
+            <div className="col-span-1 text-center relative">
+              <div className="absolute inset-0 bg-gray-500/20 backdrop-blur-md rounded"></div>
+              <h1 className="text-2xl font-bold whitespace-nowrap text-gray-400 relative z-10 px-2 py-1">
+                Experience
+              </h1>
+            </div>
+          </div>
 
-                <div>
-                  <h4 className="font-semibold">
-                    {" "}
-                    Intern at DEF Startups (2019){" "}
-                  </h4>
-                  <p>
-                    Assisted in building front-end components and integration
-                    REST APIs
-                  </p>
+          <div className="relative mt-16">
+            {/* Vertical center line */}
+            <div className="absolute left-1/2 top-0 w-1 bg-gray-500 h-full transform -translate-x-1/2 opacity-35"></div>
+
+            <div className="space-y-8">
+              <div className="grid grid-cols-3 items-center group hover:-translate-y-1">
+                {/* Left column: empty */}
+                <div className="col-span-1"></div>
+                {/* Center column: Dot */}
+                <div className="col-span-1 relative">
+                  <span className="absolute left-1/2 top-0 -translate-x-1/2 block w-3 h-3 bg-[var(--color-primary)] rounded-full border border-white-700 group-hover:border-blue-400 transition-colors duration-200"></span>
                 </div>
+                {/* Right column: Content */}
+                <div className="col-span-1 pr-8 text-center">
+                  <h3 className="font-bold text-xl whitespace-nowrap">
+                    Data Analytics Engineer
+                  </h3>
+                  <h4 className="font-semibold text-l">Maptek PTY LTD</h4>
+                  <p className="text-gray-300 text-base">2024-2025</p>
+                </div>
+              </div>
+
+              {/* Timeline Item 2: Education (left side) */}
+              <div className="grid grid-cols-3 items-center group hover:-translate-y-1">
+                {/* Left column: Content */}
+                <div className="col-span-1 -pr-8 text-center">
+                  <h3 className="font-bold text-xl whitespace-nowrap">
+                    Master of Information Technology
+                  </h3>
+                  <h4 className="font-semibold text-l">UNSW</h4>
+                  <p className="text-gray-300 text-base">2022-2024</p>
+                </div>
+                {/* Center column: Dot */}
+                <div className="col-span-1 relative">
+                  <span className="absolute left-1/2 top-0 transform -translate-x-1/2 block w-3 h-3 bg-[var(--color-secondary)] rounded-full border-1 border-white-700 group-hover:border-blue-400 transition-colors duration-200"></span>
+                </div>
+                {/* Right column: empty */}
+                <div className="col-span-1"></div>
+              </div>
+
+              {/* Timeline Item 3: Experience 2 (right side) */}
+              <div className="grid grid-cols-3 items-center group hover:-translate-y-1">
+                {/* Left column: empty */}
+                <div className="col-span-1"></div>
+                {/* Center column: Dot */}
+                <div className="col-span-1 relative">
+                  <span className="absolute left-1/2 top-0 -translate-x-1/2 block w-3 h-3 bg-[var(--color-primary)] rounded-full border border-white-700 group-hover:border-blue-400 transition-colors duration-200"></span>
+                </div>
+                {/* Right column: Content */}
+                <div className="col-span-1 pr-8 text-center">
+                  <h3 className="font-bold text-xl whitespace-nowrap">
+                    System and Data Specialist
+                  </h3>
+                  <h4 className="font-semibold text-l">
+                    Rio Tinto, Oyu Tolgoi Project
+                  </h4>
+                  <p className="text-gray-300 text-base">2016-2022</p>
+                </div>
+              </div>
+              {/* Timeline Item 3: Experience 2 (right side) */}
+              <div className="grid grid-cols-3 items-center group hover:-translate-y-1">
+                {/* Left column: empty */}
+                <div className="col-span-1"></div>
+                {/* Center column: Dot */}
+                <div className="col-span-1 relative">
+                  <span className="absolute left-1/2 top-0 -translate-x-1/2 block w-3 h-3 bg-[var(--color-primary)] rounded-full border border-white-700 group-hover:border-blue-400 transition-colors duration-200"></span>
+                </div>
+                {/* Right column: Content */}
+                <div className="col-span-1 pr-8 text-center">
+                  <h3 className="font-bold text-xl whitespace-nowrap">
+                    Automation Engineer
+                  </h3>
+                  <h4 className="font-semibold text-l">MCS International</h4>
+                  <p className="text-gray-300 text-base">2013-2015</p>
+                </div>
+              </div>
+
+              {/* Timeline Item 2: Education (left side) */}
+              <div className="grid grid-cols-3 items-center group hover:-translate-y-1">
+                {/* Left column: Content */}
+                <div className="col-span-1 -pr-8 text-center">
+                  <h3 className="font-bold text-xl whitespace-nowrap">
+                    Bachelor of Computer Science
+                  </h3>
+                  <h4 className="font-semibold text-l">MUST</h4>
+                  <p className="text-gray-300 text-base">2009-2013</p>
+                </div>
+                {/* Center column: Dot */}
+                <div className="col-span-1 relative">
+                  <span className="absolute left-1/2 top-0 transform -translate-x-1/2 block w-3 h-3 bg-[var(--color-secondary)] rounded-full border-1 border-white-700 group-hover:border-blue-400 transition-colors duration-200"></span>
+                </div>
+                {/* Right column: empty */}
+                <div className="col-span-1"></div>
               </div>
             </div>
           </div>
