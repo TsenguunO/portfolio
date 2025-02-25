@@ -70,9 +70,19 @@ body {
     }
   }
 
+
   .animate-loading-bar {
     animation: loading 0.8s ease infinite;
   }
+}
+
+
+.animate-riseScale {
+  animation: riseScale 3s forwards;
+  transform-origin: bottom;
+  /* Optional: adjust top border for a mountain effect */
+  border-top-left-radius: 50% 20%;
+  border-top-right-radius: 50% 20%;
 }
 
 .reveal {
@@ -84,4 +94,14 @@ body {
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
 }

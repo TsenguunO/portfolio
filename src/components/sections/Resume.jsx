@@ -3,12 +3,12 @@ import { RevealOnScroll } from "../RevealOnScroll";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/esm/Page/TextLayer.css"; // Improves text rendering
-import pdf from "../../assets/TimTsenguun_Resume_DataEngineer.pdf";
-
+// import pdf from "/TimTsenguun_Resume_DataEngineer.pdf";
+// import pdf from "../../public/TimTsenguun_Resume_DataEngineer.pdf";
 // ✅ Set PDF.js worker source
 // pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
-
+const pdf = "/TimTsenguun_Resume_DataEngineer.pdf";
 export const Resume = () => {
   const [width, setWidth] = useState(window.innerWidth);
 
@@ -80,3 +80,4 @@ export const Resume = () => {
 };
 
 export default Resume;
+
