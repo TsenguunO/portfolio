@@ -1,15 +1,17 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 
 export const About = () => {
-  const frontendSkills = [
-    "React",
-    "Vue",
-    "TypeScript",
-    "TailwindCSS",
-    "Svelte",
+  const ProgrammingSkills = ["Python", "SQL", "HTML", "JavaScript", "React"];
+  const DataViz = ["Tableau", "PowerBI", "QuickSight"];
+  const DataEngineeringTools = [
+    "Docker",
+    "FastAPI",
+    "FlaskAPI",
+    "Git",
+    "PySpark",
   ];
-
-  const backendSkills = ["Node.js", "Python", "AWS", "MongoDB", "GraphQL"];
+  const AWSTools = ["Athena", "Glue", "S3", "Redshift", "Lambda"];
+  const AutomationTools = ["PowerAutomate", "PowerApps,"];
 
   return (
     <section
@@ -30,9 +32,9 @@ export const About = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
               <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                <h3 className="text-xl font-bold mb-4"> Frontend</h3>
+                <h3 className="text-xl font-bold mb-4"> Programming</h3>
                 <div className="flex flex-wrap gap-2 ">
-                  {frontendSkills.map((tech, key) => (
+                  {ProgrammingSkills.map((tech, key) => (
                     <span
                       key={key}
                       className="
@@ -49,9 +51,47 @@ export const About = () => {
               </div>
 
               <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                <h3 className="text-xl font-bold mb-4"> Backend</h3>
+                <h3 className="text-xl font-bold mb-4"> AWS </h3>
                 <div className="flex flex-wrap gap-2">
-                  {backendSkills.map((tech, key) => (
+                  {AWSTools.map((tech, key) => (
+                    <span
+                      key={key}
+                      className="
+                      bg-gray-100/30 text-white-500 py-1 px-3 
+                      rounded-full text-sm
+                      transition
+                      hover:bg-gray-100/60 hover:-translate-y-0.5
+                      hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)]
+                    ">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+                <h3 className="text-xl font-bold mb-4"> Data Engineering</h3>
+                <div className="flex flex-wrap gap-2">
+                  {DataEngineeringTools.map((tech, key) => (
+                    <span
+                      key={key}
+                      className="
+                      bg-gray-100/30 text-white-500 py-1 px-3 
+                      rounded-full text-sm
+                      transition
+                      hover:bg-gray-100/60 hover:-translate-y-0.5
+                      hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)]
+                    ">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+                <h3 className="text-xl font-bold mb-4"> Data Viz</h3>
+                <div className="flex flex-wrap gap-2">
+                  {DataViz.map((tech, key) => (
                     <span
                       key={key}
                       className="
@@ -68,20 +108,22 @@ export const About = () => {
               </div>
             </div>
           </div>
+
+          {/* Experience and Education Timeline */}
           <div className="grid grid-cols-3 items-center mb-8 mt-8">
             {/* Left column: Education */}
-            <div className="col-span-1 text-center relative">
-              <div className="absolute inset-0 bg-gray-500/20 backdrop-blur-md rounded"></div>
-              <h1 className="text-2xl font-bold whitespace-nowrap text-white relative z-10 px-2 py-1">
+            <div className="col-span-1 text-center relative group cursor-pointer transition-transform duration-300 hover:-translate-y-1">
+              <div className="box_transition absolute inset-0 "></div>
+              <h1 className="text-2xl font-bold whitespace-nowrap text-white relative z-10 px-2 py-2 ">
                 Education
               </h1>
             </div>
             {/* Center column: Empty (for vertical line alignment) */}
             <div className="col-span-1"></div>
             {/* Right column: Experience */}
-            <div className="col-span-1 text-center relative">
-              <div className="absolute inset-0 bg-gray-500/20 backdrop-blur-md rounded"></div>
-              <h1 className="text-2xl font-bold whitespace-nowrap text-white relative z-10 px-2 py-1">
+            <div className="col-span-1 text-center relative group cursor-pointer transition-transform duration-300 hover:-translate-y-1">
+              <div className="box_transition absolute inset-0"></div>
+              <h1 className="text-2xl font-bold whitespace-nowrap text-white relative z-10 px-2 py-2">
                 Experience
               </h1>
             </div>
@@ -116,7 +158,7 @@ export const About = () => {
                   <h3 className="font-bold text-xl whitespace-nowrap">
                     Master of Information Technology
                   </h3>
-                  <h4 className="font-semibold text-l">UNSW</h4>
+                  <h4 className="font-s emibold text-l">UNSW</h4>
                   <p className="text-gray-300 text-base">2022-2024</p>
                 </div>
                 {/* Center column: Dot */}

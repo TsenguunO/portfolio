@@ -2,18 +2,18 @@
 
 /* Define Global Color Variables */
 :root {
-  --color-primary: #85C1E9;   /* Start color */
+  --color-primary: #85c1e9; /* Start color */
   --color-secondary: #3d5a81; /* End color */
-  --color-accent: #658FAE;    /* Intermediate color */
-  --color-tertiary: #445E73;  /* Another intermediate color */
+  --color-accent: #658fae; /* Intermediate color */
+  --color-tertiary: #445e73; /* Another intermediate color */
   /* --color-description: #F5F5F5; */
-  --color-description: #FFFFFF;
+  --color-description: #ffffff;
 }
 
 .box_transition {
   /* Padding equivalent to p-6 */
   padding: 1.5rem;
-  
+
   /* Rounded corners equivalent to rounded-xl */
   border-radius: 0.75rem;
 
@@ -21,7 +21,7 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(8px);
   /* background-color: rgba(var(--gray-100), 0.3); */
-  background-color: rgba(37, 37, 37, 0.05);
+  background-color: rgba(20, 20, 20, 0.2);
   /* Transition equivalent to transition */
   transition: all 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -70,12 +70,10 @@ body {
     }
   }
 
-
   .animate-loading-bar {
     animation: loading 0.8s ease infinite;
   }
 }
-
 
 .animate-riseScale {
   animation: riseScale 3s forwards;
@@ -96,9 +94,9 @@ body {
   transform: translateY(0);
 }
 
-
 @keyframes twinkle {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0;
   }
   50% {
