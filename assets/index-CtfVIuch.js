@@ -4087,7 +4087,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                      transition-all duration-500 ease-in-out
 
                      ${O?"h-screen opacity-100 pointer-events-auto":"h-0 opacity-0 pointer-events-none"}
-                   `,children:[st.jsx("button",{onClick:()=>r(!1),className:"absolute top-6 right-6 text-white text-3xl focus:outline-none cursor-pointer","aria-label":"Close Menu",children:"×"}),st.jsx("a",{href:"#home",onClick:()=>r(!1),className:`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
+                   `,children:[st.jsx("button",{onClick:()=>r(!1),className:"absolute top-6 right-6 text-white  text-3xl focus:outline-none cursor-pointer","aria-label":"Close Menu",children:"×"}),st.jsx("a",{href:"#home",onClick:()=>r(!1),className:`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
                     ${O?"opacity-100 translate-y-0":"opacity-0 translate-y-5"}        
             `,children:"Home"}),st.jsx("a",{href:"#About",onClick:()=>r(!1),className:`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
             ${O?"opacity-100 translate-y-0":"opacity-0 translate-y-5"}        
